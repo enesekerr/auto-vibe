@@ -1,8 +1,8 @@
-# AutoVibe: Araç Deneyimleri ve Bakım Takibi Platformu 🚗✨
+# AutoVibe: Araç Deneyimleri ve Bakım Takibi Platformu 🚗
 
 AutoVibe, araç sahiplerinin taşıtlarıyla ilgili deneyimlerini paylaştığı, detaylı kullanım ve değerlendirme yapabildiği, aynı zamanda araçlarının bakım geçmişini takip edebildiği kapsamlı bir web uygulamasıdır. Bu platform, kişisel araç yönetimini kolaylaştırırken, aynı zamanda diğer kullanıcıların araç seçimleri ve deneyimleri hakkında bilgi edinmesini sağlar.
 
-## 🚀 Ana Özellikler
+## Ana Özellikler
 
 * **Kullanıcı Kimlik Doğrulama:** Firebase Authentication ile güvenli giriş ve kayıt sistemi. Kullanıcılar giriş yapmadığında garaj sayfasına erişemez.
 * **Kişisel Garaj:** Kullanıcıların sahip oldukları araçları marka, model, yıl, kilometre gibi detaylarla ekleyebildiği özel garaj alanı.
