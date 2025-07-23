@@ -1,0 +1,424 @@
+/* src/pages/Garage.css */
+
+.garage-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;
+    color: #222;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+/* === FORM === */
+.garage-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-group>div {
+    flex: 1 1 calc(33.33% - 16px);
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.garage-form input[type="text"],
+.garage-form input[type="date"],
+.garage-form input[type="number"], /* <-- Bu satır geri eklendi */
+.garage-form input:not([type="file"]) {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.garage-form input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* === FORM FOOTER === */
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.garage-form button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.garage-form button:hover {
+    background-color: #666;
+}
+
+/* === FILE UPLOAD === */
+.file-upload {
+    display: inline-flex; /* Düzen için daha uygun olabilir */
+    align-items: center;
+    gap: 10px; /* Label ve dosya adı arasında boşluk */
+}
+
+
+.file-label {
+    background-color: #444;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.file-label:hover {
+    background-color: #666;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+.file-name {
+    font-size: 0.9rem;
+    color: #333;
+    word-break: break-word;
+    max-width: 200px;
+}
+
+/* === ARAÇ LİSTESİ === */
+.garage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.no-vehicles-message {
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+.vehicle-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    background: #f4f4f4;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.vehicle-card img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 200px; /* Sabit yükseklik, object-fit ile resmi bozmadan */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+.vehicle-card .vehicle-details { /* Yeni eklenen div'e sınıf vererek daha spesifik hedefleme */
+    flex: 1;
+    min-width: 200px;
+}
+
+/* === BAKIM GEÇMİŞİ === */
+.maintenance-container {
+    margin-top: 16px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.maintenance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.maintenance-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e2e2;
+    gap: 20px;
+}
+
+.maintenance-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+}
+
+.maintenance-date {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.maintenance-desc {
+    font-size: 0.95rem;
+    color: #444;
+    flex: 1;
+}
+
+.maintenance-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.maintenance-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.maintenance-add-btn {
+    padding: 8px 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.maintenance-add-btn:hover {
+    background-color: #666;
+}
+
+/* --- YENİ EKLENEN DENEYİM FORMU VE BUTON STILLERİ --- */
+.share-experience-button {
+    background-color: #007bff; /* Mavi tonu */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+    width: 100%; /* Kart içinde tam genişlik */
+    box-sizing: border-box; /* Padding ve border dahil genişlik hesapla */
+}
+
+.share-experience-button:hover {
+    background-color: #0056b3;
+}
+
+.add-experience-form-garage {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08); /* Hafif gölge */
+}
+
+.add-experience-form-garage h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.add-experience-form-garage .form-group {
+    margin-bottom: 15px;
+}
+
+.add-experience-form-garage label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500; /* Daha az kalın */
+    color: #555;
+    font-size: 0.95em;
+}
+
+.add-experience-form-garage input[type="text"],
+.add-experience-form-garage textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+    box-sizing: border-box; /* Padding ve border dahil genişlik */
+}
+
+.add-experience-form-garage textarea {
+    resize: vertical; /* Sadece dikeyde boyutlandırmaya izin ver */
+    min-height: 80px; /* Minimum yükseklik */
+}
+
+.add-experience-form-garage .rating-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Aralarında boşluk */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.add-experience-form-garage .rating-group {
+    flex: 1; /* Esnek boyutlandırma */
+    min-width: 120px; /* Minimum genişlik */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* İçindeki elemanları sola hizala */
+}
+
+/* Puanlama inputlarının stilleri şimdi geri getirildi */
+.add-experience-form-garage input[type="number"] {
+    width: 60px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera için okları kaldır */
+.add-experience-form-garage input[type="number"]::-webkit-outer-spin-button,
+.add-experience-form-garage input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-experience-form-garage .submit-experience-button {
+    background-color: #28a745; /* Yeşil tonu */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+    width: auto; /* Otomatik genişlik */
+}
+
+.add-experience-form-garage .submit-experience-button:hover {
+    background-color: #218838;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group>div {
+        width: 100%;
+    }
+
+    .form-footer {
+        flex-direction: column; /* Küçük ekranlarda alt alta */
+        align-items: stretch; /* Tam genişlik kaplaması için */
+    }
+
+    .garage-form button, .file-label {
+        width: 100%; /* Butonlar tam genişlik kaplasın */
+        text-align: center;
+    }
+
+    .file-upload {
+        display: flex; /* Küçük ekranlarda esnek kutu olarak davran */
+        flex-direction: column;
+        align-items: center; /* Ortala */
+        width: 100%; /* Tam genişlik */
+    }
+    
+    .file-name {
+        max-width: 100%; /* Küçük ekranlarda tam genişlik */
+        text-align: center;
+        margin-top: 5px; /* Label ile dosya adı arasına boşluk */
+    }
+
+    .vehicle-card {
+        flex-direction: column;
+        align-items: center; /* Resim ve detayları ortala */
+    }
+
+    .vehicle-card img {
+        width: 100%;
+        height: auto; /* Yüksekliği otomatik yap */
+        margin-bottom: 15px; /* Alttan boşluk */
+    }
+    
+    .vehicle-card .vehicle-details {
+        text-align: center; /* Detayları ortala */
+        min-width: unset; /* Minimum genişliği kaldır */
+        width: 100%;
+    }
+
+    .maintenance-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .maintenance-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add-experience-form-garage .rating-inputs {
+        flex-direction: column; /* Puanlama inputlarını alt alta sırala */
+        gap: 10px;
+    }
+
+    .add-experience-form-garage .rating-group {
+        width: 100%;
+        min-width: unset;
+    }
+}
