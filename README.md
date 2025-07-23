@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# AutoVibe: Araç Deneyimleri ve Bakım Takibi Platformu 🚗✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AutoVibe, araç sahiplerinin taşıtlarıyla ilgili deneyimlerini paylaştığı, detaylı kullanım ve değerlendirme yapabildiği, aynı zamanda araçlarının bakım geçmişini takip edebildiği kapsamlı bir web uygulamasıdır. Bu platform, kişisel araç yönetimini kolaylaştırırken, aynı zamanda diğer kullanıcıların araç seçimleri ve deneyimleri hakkında bilgi edinmesini sağlar.
 
-## Available Scripts
+## 🚀 Ana Özellikler
 
-In the project directory, you can run:
+* **Kullanıcı Kimlik Doğrulama:** Firebase Authentication ile güvenli giriş ve kayıt sistemi. Kullanıcılar giriş yapmadığında garaj sayfasına erişemez.
+* **Kişisel Garaj:** Kullanıcıların sahip oldukları araçları marka, model, yıl, kilometre gibi detaylarla ekleyebildiği özel garaj alanı.
+* **Araç Deneyimi Paylaşımı:** Her bir araç için başlık, detaylar, konfor, performans, yakıt verimliliği, donanım ve servis deneyimi gibi kategorilerde kişisel deneyimlerin paylaşılması.
+* **Bakım Geçmişi Takibi:** Araçlara ait düzenli ve düzensiz bakımların (yağ değişimi, lastik değişimi vb.) kayıt altına alınması.
+* **Global Akış (Feed):** Tüm kullanıcıların paylaştığı araç deneyimlerinin kronolojik olarak görüntülendiği genel akış sayfası.
+* **Görsel Destek:** Eklenen araçların fotoğraflarının yüklenmesi ve akışta gösterilmesi. **Önemli Not:** Resimler doğrudan Firestore'a kaydedildiği için **1MB belge limiti** bulunmaktadır. Büyük boyutlu görseller yüklenmeyecektir. Daha büyük görseller için Firebase Storage gibi harici bir depolama çözümü önerilir.
 
-### `npm start`
+## 🛠️ Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Frontend:** React.js
+* **Veritabanı/Backend:** Google Firebase (Authentication, Firestore)
+* **Styling:** CSS3
+* **Yönlendirme:** React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Feed
+<img width="1899" height="954" alt="image" src="https://github.com/user-attachments/assets/a971ef15-0ff9-4ae0-b53f-721f95dd5891" />
 
-### `npm test`
+## Garage
+<img width="1905" height="952" alt="image" src="https://github.com/user-attachments/assets/cbf58c14-6dc2-4a6c-8ee4-ee4563d4b00b" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Experience
+<img width="1904" height="951" alt="image" src="https://github.com/user-attachments/assets/ed3025c1-f799-4e46-9eaa-c85148d8d203" />
